@@ -52,24 +52,30 @@ DbUtil.java is a utility class responsible for managing the database connection.
 #### a.	train.entity package
 The entity package contains classes that represent the data entities used in the hospital information system. These classes map directly to the database tables and encapsulate the data fields, providing getter and setter methods to access and manipulate the data.
 
-•	Patient.java
+•	Patient.java:
+
 Patient.java is a model class representing a patient in the hospital system. It includes fields such as patientId, name, dateOfBirth, gender, and contactNumber. This class provides getter and setter methods for each field, as well as a toString method for displaying patient information.
 
-•	Doctor.java
+•	Doctor.java:
+
 Doctor.java is a model class representing a doctor in the hospital system. It includes fields such as doctorId, name, specialization, and contactNumber. This class provides getter and setter methods for each field, as well as a toString method for displaying doctor information.
 
-•	AppointmentScheduling.java
+•	AppointmentScheduling.java:
+
 AppointmentScheduling.java is a model class representing an appointment in the hospital system. It includes fields such as appointmentId, doctorId, patientId, appointmentDate, and appointmentTime. This class provides getter and setter methods for each field, as well as a toString method for displaying appointment information.
 ### b.	train.dao package
 The DAO (Data Access Object) package contains classes that handle the database operations for each entity. These classes interact with the database to perform CRUD operations and any other necessary queries.
 
-•	PatientDAO.java
+•	PatientDAO.java:
+
 PatientDAO.java is responsible for handling database operations related to patients. It includes methods to add, retrieve, update, and delete patient records in the database.
 
-•	DoctorDAO.java
+•	DoctorDAO.java:
+
 DoctorDAO.java is responsible for handling database operations related to doctors. It includes methods to add, retrieve, update, and delete doctor records in the database.
 
-•	AppointmentSchedulingDAO.java
+•	AppointmentSchedulingDAO.java:
+
 AppointmentSchedulingDAO.java is responsible for handling database operations related to appointments. It includes methods to schedule, update, and validate appointments, as well as checking doctor and patient availability.
 
 
